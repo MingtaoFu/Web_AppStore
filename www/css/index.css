@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/iconfont/iconfont.eot");
+  /* IE9*/
+  src: url("../fonts/iconfont/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont/iconfont.woff") format("woff"), url("../fonts/iconfont/iconfont.ttf") format("truetype"), url("../fonts/iconfont/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-favorfill:before {
+  content: "\e600"; }
+
+.icon-favor:before {
+  content: "\e601"; }
+
+.icon-loading:before {
+  content: "\e602"; }
+
+.icon-search:before {
+  content: "\e603"; }
+
+.icon-back:before {
+  content: "\e604"; }
+
+.icon-right:before {
+  content: "\e605"; }
+
+.icon-refresh:before {
+  content: "\e606"; }
+
+.icon-goods:before {
+  content: "\e608"; }
+
+.icon-game:before {
+  content: "\e609"; }
+
+.icon-appreciatefill:before {
+  content: "\e60a"; }
+
+.icon-share:before {
+  content: "\e607"; }
+
+.icon-creativefill:before {
+  content: "\e60b"; }
+
+.icon-tagfill:before {
+  content: "\e60c"; }
+
+.full, .ad img {
+  width: 100%;
+  height: 100%; }
+
+li {
+  list-style: none; }
+
+.paddingXMid {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.paddingYSmall, .appList .appItem {
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+.paddingMid, .searchInput {
+  padding: 10px; }
+
+.marginYMid, .searchInput {
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+.bordius5, .ad img {
+  border-radius: 5px; }
+
+.inputHidden {
+  border: none; }
+
+.searchInput {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 12px; }
+
+.appList .appItem {
+  height: 101px;
+  width: 100%;
+  border-bottom: 1px solid #ddd; }
+  .appList .appItem .appLogo {
+    float: left; }
+    .appList .appItem .appLogo img {
+      width: 88px;
+      height: 88px;
+      border-radius: 5px; }
+  .appList .appItem .appMain {
+    margin-left: 10px;
+    float: left; }
+    .appList .appItem .appMain h1 {
+      font-size: 16px; }
+    .appList .appItem .appMain small {
+      font-size: 12px; }
+  .appList .appItem .installBtn {
+    float: right; }
+    .appList .appItem .installBtn button {
+      background-color: white;
+      border: 1px solid green;
+      color: green;
+      border-radius: 3px; }
+
+.classQuery {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  padding: 15px;
+  display: inline-block; }
+  .classQuery .classQueryImg {
+    width: 100%; }
+
+.ad {
+  width: 50%;
+  display: inline-block; }
+  .ad:first-child {
+    padding-right: 10px; }
+  .ad:last-child {
+    padding-left: 10px; }
+
+/*# sourceMappingURL=index.css.map */

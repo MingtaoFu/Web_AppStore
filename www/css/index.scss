@@ -1,0 +1,79 @@
+@import "base";
+
+$appLogoWidth: 88px;
+
+.searchInput{
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: $font12;
+  @extend .paddingMid;
+  @extend .marginYMid;
+}
+
+.appList{
+  .appItem{
+    @extend .paddingYSmall;
+    height: 101px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    .appLogo{
+      float: left;
+      img{
+        width: $appLogoWidth;
+        height: $appLogoWidth;
+        border-radius: $bordius5;
+      }
+    }
+    .appMain{
+      margin-left: $paddingMid;
+      float: left;
+      h1{
+        font-size: $font16;
+      }
+      small{
+        font-size: $font12;
+      }
+    }
+    .installBtn{
+      float: right;
+      button{
+        background-color: white;
+        border: 1px solid green;
+        color: green;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+.classQuery{
+  position: relative;
+  width: 20%;
+  height: 100%;
+  padding: 15px;
+
+  display: inline-block;
+
+  .classQueryImg{
+    width: 100%;
+  }
+}
+
+.ad{
+  width: 50%;
+
+  display: inline-block;
+
+  &:first-child{
+    padding-right: 10px;
+  }
+
+  &:last-child{
+    padding-left: 10px;
+  }
+
+  img{
+    @extend .full;
+    @extend .bordius5;
+  }
+}

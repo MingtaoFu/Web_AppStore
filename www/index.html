@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>应用商店</title>
+    </head>
+    <body ng-app="app" ng-controller="index">
+    <div class="app">
+        <header>
+        </header>
+        <div>
+            <div class="paddingXMid">
+                <div class="searchInput">
+                    <span class="iconfont icon-search"></span>
+                    <input placeholder="一秒打造你的专属电影时尚大片" class="inputHidden">
+                </div>
+                <div class="heroBlock">
+                    <div class="adBlock">
+                        <div class="ad">
+                            <img src="img/ad1.gif">
+                        </div
+                        ><div class="ad">
+                            <img src="img/ad2.jpg">
+                        </div>
+                    </div>
+                    <div class="classQueryBlock">
+                        <div class="classQuery">
+                            <div class="classQueryImg">
+                                <span class="iconfont icon-appreciatefill"></span>
+                            </div>
+                            <p>必备</p>
+                        </div
+                        ><div class="classQuery">
+                            <div class="classQueryImg">
+                                <span class="iconfont icon-tagfill"></span>
+                            </div>
+                            <p>新品</p>
+                        </div
+                        ><div class="classQuery">
+                            <div class="classQueryImg">
+                                <span class="iconfont icon-goods"></span>
+                            </div>
+                            <p>电商</p>
+                        </div
+                        ><div class="classQuery">
+                            <div class="classQueryImg">
+                                <span class="iconfont icon-creativefill"></span>
+                            </div>
+                            <p>发现</p>
+                        </div
+                        ><div class="classQuery">
+                            <div class="classQueryImg">
+                                <span class="iconfont icon-game"></span>
+                            </div>
+                            <p>游戏</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <ul class="appList paddingXMid">
+                <li ng-repeat="item in appList" class="appItem">
+                    <section class="appLogo">
+                        <img src="{{item.img}}">
+                    </section>
+                    <section class="appMain">
+                        <h1>{{item.name}}</h1>
+                        <p>
+                            <span ng-repeat="for i in [1,2,3,4,5]" class="iconfont icon-favorfill">
+                            </span>
+                        </p>
+                        <small>{{item.type}}</small>
+                    </section>
+                    <section class="installBtn">
+                        <button>安装</button>
+                    </section>
+                </li>
+
+            </ul>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/angular/angular.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/ctrl.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </div>
+    </body>
+</html>
