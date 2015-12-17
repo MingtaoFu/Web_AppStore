@@ -85,6 +85,12 @@ li {
 .inputHidden {
   border: none; }
 
+.centerAbsolute, .classQuery .classQueryImg span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 .searchInput {
   border: 1px solid #ddd;
   border-radius: 3px;
@@ -119,10 +125,18 @@ li {
   position: relative;
   width: 20%;
   height: 100%;
-  padding: 15px;
+  padding: 8px;
+  font-size: 12px;
+  text-align: center;
   display: inline-block; }
   .classQuery .classQueryImg {
-    width: 100%; }
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+    color: white; }
+    .classQuery .classQueryImg span {
+      display: block;
+      font-size: 22px; }
 
 .ad {
   width: 50%;

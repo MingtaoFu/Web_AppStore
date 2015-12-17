@@ -37,19 +37,15 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
+        //var parentElement = document.getElementById(id);
+        //var listeningElement = parentElement.querySelector('.listening');
+        //var receivedElement = parentElement.querySelector('.received');
 
         (function () {
             var ele = document.querySelectorAll('.classQueryImg');
             for (var i in ele) {
                 var theEle = ele[i];
+                //theEle.setAttribute('style', 'height:'+getComputedStyle(theEle).width);
                 theEle.style.height = getComputedStyle(theEle).width;
             }
         }) ();
