@@ -47,12 +47,12 @@ var app = {
         console.log('Received Event: ' + id);
 
         (function () {
-                                var ele = document.querySelectorAll('classQueryImg');
-                                for (var i in ele) {
-                                    var theEle = ele[i];
-                                    theEle.style.height = getComputedStyle(theEle).width;
-                                }
-                            }) ();
+            var ele = document.querySelectorAll('.classQueryImg');
+            for (var i in ele) {
+                var theEle = ele[i];
+                theEle.style.height = getComputedStyle(theEle).width;
+            }
+        }) ();
     }
 };
 

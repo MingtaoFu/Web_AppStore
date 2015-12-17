@@ -5,6 +5,13 @@ $font12: 12px;
 $font14: 14px;
 $font16: 16px;
 
+*{
+  box-sizing: border-box;
+}
+body{
+  font-size: $font14;
+}
+
 @font-face {font-family: "iconfont";
   src: url('../fonts/iconfont/iconfont.eot'); /* IE9*/
   src: url('../fonts/iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
