@@ -21,6 +21,20 @@ app.controller('index', function($scope) {
             star: 4,
             img: 'img/jiafeimao.jpg',
             type: '游戏'
+        },
+        {
+            id: 27,
+            name: '淘宝',
+            star: 3,
+            img: 'img/taobao.png',
+            type: '时尚与购物'
+        },
+        {
+            id: 87,
+            name: 'QQ',
+            star: 2,
+            img: 'img/qq.jpg',
+            type: '聊天与社交'
         }
     ];
 });
