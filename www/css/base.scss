@@ -1,9 +1,17 @@
 $paddingMid: 10px;
 $paddingSmall: 6px;
 $bordius5: 5px;
+
+$font8: 8px;
+$font10: 10px;
 $font12: 12px;
 $font14: 14px;
 $font16: 16px;
+
+$grey1: #8B8B8B;
+$grey2: #797979;
+$grey3: #919191;
+$grey4: #E5E5E5;
 
 *{
   box-sizing: border-box;
@@ -52,6 +60,14 @@ li{
   list-style: none;
 }
 
+hr{
+  margin: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 1px solid #ddd;
+}
+
 .paddingXMid{
   padding-left: $paddingMid;
   padding-right: $paddingMid;
@@ -84,4 +100,10 @@ li{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.YCenterAbsolute{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }

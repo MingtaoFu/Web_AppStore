@@ -64,6 +64,13 @@ body {
 li {
   list-style: none; }
 
+hr {
+  margin: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 1px solid #ddd; }
+
 .paddingXMid {
   padding-left: 10px;
   padding-right: 10px; }
@@ -91,35 +98,55 @@ li {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+.YCenterAbsolute, .appList .appItem .installBtn {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%); }
+
 .searchInput {
   border: 1px solid #ddd;
   border-radius: 3px;
   font-size: 12px; }
 
-.appList .appItem {
-  height: 101px;
-  width: 100%;
-  border-bottom: 1px solid #ddd; }
-  .appList .appItem .appLogo {
-    float: left; }
-    .appList .appItem .appLogo img {
-      width: 88px;
-      height: 88px;
-      border-radius: 5px; }
-  .appList .appItem .appMain {
-    margin-left: 10px;
-    float: left; }
-    .appList .appItem .appMain h1 {
-      font-size: 16px; }
-    .appList .appItem .appMain small {
-      font-size: 12px; }
-  .appList .appItem .installBtn {
-    float: right; }
-    .appList .appItem .installBtn button {
-      background-color: white;
-      border: 1px solid green;
-      color: green;
-      border-radius: 3px; }
+.appList {
+  margin-top: 0;
+  margin-bottom: 0; }
+  .appList .appItem {
+    height: 71px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    position: relative; }
+    .appList .appItem .appLogo {
+      float: left; }
+      .appList .appItem .appLogo img {
+        width: 58px;
+        height: 58px;
+        border-radius: 5px; }
+    .appList .appItem .appMain {
+      margin-left: 10px;
+      float: left; }
+      .appList .appItem .appMain > * {
+        margin-top: 2px;
+        margin-bottom: 2px; }
+      .appList .appItem .appMain .appName {
+        font-size: 16px; }
+      .appList .appItem .appMain small {
+        font-size: 12px;
+        color: #797979; }
+      .appList .appItem .appMain .iconfont {
+        font-size: 8px;
+        color: #797979; }
+        .appList .appItem .appMain .iconfont[title=active] {
+          color: #FE7D00; }
+    .appList .appItem .installBtn {
+      right: 0; }
+      .appList .appItem .installBtn button {
+        padding: 6px 14px;
+        font-size: 10px;
+        background-color: white;
+        border: 1px solid #27B860;
+        color: #27B860;
+        border-radius: 3px; }
 
 .classQuery {
   position: relative;
@@ -128,6 +155,7 @@ li {
   padding: 8px;
   font-size: 12px;
   text-align: center;
+  color: #8B8B8B;
   display: inline-block; }
   .classQuery .classQueryImg {
     width: 100%;

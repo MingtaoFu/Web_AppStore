@@ -70,12 +70,11 @@
                         <img src="{{item.img}}">
                     </section>
                     <section class="appMain">
-                        <h1>{{item.name}}</h1>
+                        <p class="appName">{{item.name}}</p>
                         <p>
-                            <!--
-                            <span ng-repeat="for i in [1,2,3,4,5]" class="iconfont icon-favorfill">
+                            <span ng-repeat="i in [1,2,3,4,5]"
+                                  class="iconfont icon-favorfill" title="{{i<=item.star?'active':''}}">
                             </span>
-                            -->
                         </p>
                         <small>{{item.type}}</small>
                     </section>

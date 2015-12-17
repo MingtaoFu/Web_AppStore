@@ -11,14 +11,14 @@ app.controller('index', function($scope) {
         {
             id: 123,
             name: '美团',
-            star: 9,
+            star: 3,
             img: 'img/meituan.jpg',
             type: '时尚与购物'
         },
         {
             id: 24,
             name: '加菲猫爱消除',
-            star: 8,
+            star: 4,
             img: 'img/jiafeimao.jpg',
             type: '游戏'
         }
